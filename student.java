@@ -1,3 +1,5 @@
+package assg6_franklinj23;
+
 public class Student implements Comparable<Student> {
     private String id;
     private String name;
@@ -66,10 +68,6 @@ public class Student implements Comparable<Student> {
         
         return false;
     }
-    
-    public int hashCode() {
-            return id != null ? id.hashCode() : 0; 
-        }
     
     public int compareTo(Student other) {
         if (this.id == null && other.id == null) {
